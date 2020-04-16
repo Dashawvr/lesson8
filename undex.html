@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form{
+            margin: 0 auto;
+            width: 200px;
+            height: 205px;
+            background-color: beige;
+            text-align: center;
+            vertical-align: baseline;
+        }
+        #area {
+            margin-top: 20px;
+            width: 200px;
+            height: 50px;
+            background-color: #fcffc6;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+        }
+        .border{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<!--task1-->
+<textarea id="textarea"></textarea>
+<br>
+<!--task2-->
+<form class="form">
+    <label>Input your form: </label><br>
+    <label>Name:
+    <input type="text" id="text">
+    </label> <br>
+    <label>Email:
+        <input type="email" id="email">
+    </label> <br>
+    <label>Direction: </label><br>
+    <label>JS
+        <input type="checkbox" class="check">
+    </label> <br>
+    <label>HTML
+        <input type="checkbox" class="checkbox">
+    </label> <br>
+    <label>Java
+        <input type="checkbox" class="checkbox">
+    </label><br>
+    <label>Sex: </label><br>
+    <label>Male
+        <input type="radio" id="radio" name="contact">
+    </label> <br>
+    <label>Female
+        <input type="radio" id="radio1" name="contact">
+    </label><br>
+    <button id="ok">OK</button>
+</form>
+
+<!--task3-->
+
+<textarea id="area" placeholder="Write here"></textarea>
+<br>
+<button id="btn">Clear</button>
+
+<!--task4-->
+<!---->
+<form class="flex" name="form" >
+    <input type="text" name="FIO" placeholder="FIO">
+    <input type="text" name="number"  placeholder="number">
+    <input type="text" name="EMail" placeholder="EMail">
+    <input type="text" name="galera" placeholder="galera">
+    <input type="text" name="part" placeholder="part">
+    <input type="text" name="birth" placeholder="birth">
+    <input type="button"  onclick="setData()" >
+<!--    <button onclick="localStorage.removeItem('form');form.value=''">Delete</button>-->
+</form>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
